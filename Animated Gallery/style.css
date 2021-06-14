@@ -1,15 +1,16 @@
-@import url(<link rel="preconnect" href="https://fonts.gstatic.com">
- <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet");
 * {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
 .hero {
     width: 100%;
     min-height: 100vh;
     background: #F1E4DB;
+    padding-left: 6%;
+    padding-right: 6%;
 }
 
 nav {
@@ -38,4 +39,30 @@ button {
     font-size: 14px;
     cursor: pointer;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu-icon {
+    width: 50px;
+    margin-left: 2rem;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.fila {
+    display: flex;
+    width: 100%;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.col-1,
+.col-2 {
+    flex-basis: 50%;
+    overflow: hidden;
+}
+
+.col-2 {
+    width: 100%;
 }
